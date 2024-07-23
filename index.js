@@ -1,8 +1,9 @@
 // index.js
+
 const { exec } = require("shelljs");
+const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-const { default: inquirer } = require("inquirer");
 
 // Function to create a new React project with Create React App
 const createReactApp = (projectName) => {
@@ -17,6 +18,8 @@ const createSrcFolderStructure = (projectName) => {
   const assetsPath = path.join(srcPath, "assets");
   fs.mkdirSync(assetsPath, { recursive: true });
 
+  // You can add more folders here based on your desired structure
+  // For example:
   // Create components folder
   const componentsPath = path.join(srcPath, "components");
   fs.mkdirSync(componentsPath, { recursive: true });
@@ -29,7 +32,7 @@ const createSrcFolderStructure = (projectName) => {
   const stylesPath = path.join(srcPath, "styles");
   fs.mkdirSync(stylesPath, { recursive: true });
 
-  // Create App.css file inside styles folder
+  // Create App.css file inside styles folder (optional)
   const appCssPath = path.join(stylesPath, "App.css");
   fs.writeFileSync(appCssPath, ""); // You can add content here if needed
 };
@@ -78,5 +81,4 @@ const main = async () => {
     console.error("Error occurred:", error);
   }
 };
-
-main();
+module.exports = main;

@@ -1,16 +1,29 @@
 {
   "name": "folder-structure-react-project",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.5",
+  "description": "CLI tool to set up a basic React project with custom folder structure.",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "bin": {
+    "folder-structure-react-project": "./bin/index.js"
   },
-  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "folder structure",
+    "cli"
+  ],
   "author": "Prabhat",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^10.1.2",
-    "shelljs": "^0.8.5"
+    "chalk": "^4.1.0",
+    "folder-structure-react-project": "^1.0.1",
+    "inquirer": "^8.2.0",
+    "node-cmd": "^4.0.0",
+    "ora": "^5.3.0",
+    "shelljs": "^0.8.4",
+    "unzipper": "^0.10.11",
+    "yargs": "^16.2.0"
   }
 }
