@@ -1,0 +1,16 @@
+{
+  "name": "folder-structure-react-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Prabhat",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^10.1.2",
+    "shelljs": "^0.8.5"
+  }
+}
